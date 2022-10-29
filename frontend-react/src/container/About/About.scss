@@ -1,0 +1,44 @@
+
+// moved text up
+.app__about {
+    flex: 1;
+    width: 100%;
+    flex-direction: column;
+}
+
+//centered images and provides some margin
+.app__profiles {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    margin-top: 2rem;
+
+}
+
+//put images in overlapped row
+.app__profile-item {
+    width: 190px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    margin: 2rem;
+
+    // scaled image size 
+    img {
+        width: 100%;  // makes image smol
+        height: 170px; // sets height
+        border-radius: 15px; // rounds corner
+        object-fit: cover; //prevents skew
+    }
+
+    @media screen and (min-width: 2000px){  // for XL screens
+        width: 370px;
+        margin: 2rem 4rem;
+
+        img {
+            height: 320px;
+        }
+    }
+}
