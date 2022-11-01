@@ -85,7 +85,29 @@
 }
 
 .app__button{
-  // border: none;
+
+ 
+  flex: 1;
+  // display: flex;
+  justify-content: center;
+  align-items: center;
+
+  list-style: none;
+
+   // margin: 0 1rem;
+   cursor: pointer;
+
+   flex-direction: column;
+ 
+
+  width: 5px;
+  height: 5px;
+  background: transparent;
+  border-radius: 50%;
+
+  margin-bottom: 5px;
+  
+  border: none;
   color: var(--gray-color);
   text-decoration: none;
   flex-direction: column;
@@ -98,7 +120,7 @@
 
 
   &:hover {
-    background-color: var(--secondary-color);
+    color: var(--secondary-color);
   }
 }
 

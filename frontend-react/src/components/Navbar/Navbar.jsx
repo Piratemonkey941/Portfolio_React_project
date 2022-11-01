@@ -33,7 +33,7 @@ const Navbar = () => {
 
           <button className='app__button' > RESUME</button>
         </a>
-        
+
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 
@@ -44,6 +44,16 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
+
+            <li>
+              <a 
+                href="resume.pdf"
+                download="resume.pdf">
+
+                <button className='app__button' > RESUME</button>
+              </a>
+              </li>
+              
               {['home', 'about', 'work', 'skills', 'contact'].map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
@@ -51,6 +61,7 @@ const Navbar = () => {
                   </a>
                 </li>
               ))}
+            
             </ul>
               </motion.div>
             )
