@@ -22,8 +22,8 @@
   align-items: center;
 
   img {
-    width: 90px;
-    height: 20px;
+    width: 175px;
+    height: 25px;
 
     @media screen and (min-width: 2000px) {
       width: 180px;
@@ -64,6 +64,8 @@
         font-weight: 500;
   
         transition: all 0.3s ease-in-out;
+
+      
   
         &:hover {
           color: var(--secondary-color);
@@ -81,6 +83,27 @@
   }
 
 }
+
+.app__button{
+  // border: none;
+  color: var(--gray-color);
+  text-decoration: none;
+  flex-direction: column;
+
+  text-transform: uppercase;
+  font-weight: 500;
+
+  transition: all 0.3s ease-in-out;
+
+
+
+  &:hover {
+    background-color: var(--secondary-color);
+  }
+}
+
+
+
 .app__navbar-menu {
   width: 35px;
   height: 35px;
