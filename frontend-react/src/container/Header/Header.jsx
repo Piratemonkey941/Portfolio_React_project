@@ -28,7 +28,7 @@ const Header = () => (
           {/* <span>👋</span> */}
           <div style={{ marginLeft: 20 }}>
             <p className="p-text">Hello, I am</p>
-            <h1 className="head-text">Anthony</h1>
+            <h1 className="head-text"> Carlos Anthony Rodriguez</h1>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ const Header = () => (
       whileInView={scaleVariants.whileInView}
       className="app__header-circles"
     >
-      {[images.angular, images.javascript, images.sass].map((circle, index) => (
+      {[images.angular, images.javascript, images.typescript].map((circle, index) => (
         <div className="circle-cmp app__flex" key={`circle-${index}`}>
           <img src={circle} alt="profile_bg" />
         </div>

@@ -75,3 +75,4 @@ export default AppWrap(
   'testimonial',
   'app__primarybg',
 );
+// Testimonial

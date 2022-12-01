@@ -38,10 +38,10 @@ const Work = () => {
 
   return (
     <>
-      <h2 className='head-text'> My Creative <span> Portfolio </span> Section</h2>
+      <h2 className='head-text'> Creative <span> Portfolio </span></h2>
 
       <div className='app__work-filter'>
-          {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'Angular', 'All'].map((item, index) => (
+          {['Web App',  'Angular', 'All'].map((item, index) => (
 
             <div 
             key={index}
@@ -72,6 +72,8 @@ const Work = () => {
               >
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
 
+                  {/* 
+                  HOVER EYE TO VIEW WEBSITE
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
                     whileHover={{ scale: [1, 0.90] }}
@@ -79,7 +81,7 @@ const Work = () => {
                     className="app__flex"
                   >
                     <AiFillEye />
-                  </motion.div>
+                  </motion.div> */}
                 </a>
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
