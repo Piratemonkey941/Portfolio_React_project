@@ -42,11 +42,13 @@ const About = () => {
     </>
   );
 };
+
 export default AppWrap(
   MotionWrap(About, 'app__about'),
   'about',
   'app__whitebg',
 );
+
 // const abouts = [
 //   {title: 'Front End Development', description: 'I am good at Front End Development', imgUrl: images.about01},
 //   {title: 'Web Design', description: 'I am good at Web Design', imgUrl: images.about02},

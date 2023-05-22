@@ -25,31 +25,54 @@ const Skills = () => {
     });
   }, []);
 
+  function shuffle(array) {
+    var currentIndex = array.length, temporaryValue, randomIndex;
+
+    // While there remain elements to shuffle...
+    while (0 !== currentIndex) {
+
+        // Pick a remaining element...
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+
+        // And swap it with the current element.
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+
+    return array;
+}
+
+// Shuffle the skills array
+let shuffledSkills = shuffle(skills);
 
 
-  return (
-    <>
-      <h2 className="head-text">Skills & Experiences</h2>
 
-      <div className="app__skills-container">
-        <motion.div className="app__skills-list">
-          {skills.map((skill) => (
-            <motion.div
-              whileInView={{ opacity: [0, 1] }}
-              transition={{ duration: 0.5 }}
-              className="app__skills-item app__flex"
-              key={skill.name}
+
+return (
+  <>
+    <h2 className="head-text">Skills & Experiences</h2>
+
+    <div className="app__skills-container">
+      <motion.div className="app__skills-list">
+        {shuffledSkills.map((skill) => (
+          <motion.div
+            whileInView={{ opacity: [0, 1] }}
+            transition={{ duration: 0.5 }}
+            className="app__skills-item app__flex"
+            key={skill.name}
+          >
+            <div
+              className="app__flex"
+              style={{ backgroundColor: skill.bgColor }}
             >
-              <div
-                className="app__flex"
-                style={{ backgroundColor: skill.bgColor }}
-              >
-                <img src={urlFor(skill.icon)} alt={skill.name} />
-              </div>
-              <p className="p-text">{skill.name}</p>
-            </motion.div>
-          ))}
-        </motion.div>
+              <img src={urlFor(skill.icon)} alt={skill.name} />
+            </div>
+            <p className="p-text">{skill.name}</p>
+          </motion.div>
+        ))}
+      </motion.div>
         <div className="app__skills-exp">
           {experiences.map((experience) => (
             <motion.div
