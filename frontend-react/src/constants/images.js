@@ -38,7 +38,7 @@ import spotify from '../assets/spotify.png';
 
 import headshot from '../assets/headshot.png';
 
-export default {
+const images = {
   email,
   mobile,
   api,
@@ -75,3 +75,5 @@ export default {
   headshot,
   angular
 };
+
+export default images;

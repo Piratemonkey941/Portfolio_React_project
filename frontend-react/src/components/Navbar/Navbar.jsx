@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import { HiMenuAlt4, HiX} from 'react-icons/hi'
-import { images } from '../../constants';
+// import { images } from '../../constants';
 import { motion } from 'framer-motion'
 import './Navbar.scss';
 
@@ -47,8 +47,8 @@ const Navbar = () => {
 
             <li>
               <a 
-                href="carlosrodriguezresume.pdf"
-                download="carlosrodriguezresume.pdf">
+                href="carlos_a_rodriguez_resume.pdf"
+                download="carlos_a_rodriguez_resume.pdf">
 
                 <button className='app__button' > RESUME</button>
               </a>
